@@ -1,12 +1,11 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./global.css";
+import SessionProviderWrapper from "./providers";
 
 export const metadata: Metadata = {
   title: "LogiTrack - Smart Logistics",
   description: "Delivery Management System",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <SessionProviderWrapper>{children}</SessionProviderWrapper>
       </body>
     </html>
   );
