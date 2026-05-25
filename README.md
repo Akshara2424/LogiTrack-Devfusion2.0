@@ -6,25 +6,25 @@
     communication — with real-time tracking and AI demand forecasting.
 
 + Tech stack : 
-    Frontend - Next.js 15 (App Router) + React + TypeScript + Tailwind CSS
-    Backend - Next.js API Routes
-    Database - MongoDB Atlas
-    Real-time: Socket.io
-    Maps: Leaflet.js + React-Leaflet
-    Auth: NextAuth.js (with Credentials + JWT)
-    Payments: Razorpay Test Mode
-    State Management: Zustand (lightweight) or React Context
-    Deployment: Vercel (frontend + API) + MongoDB Atlas
+    - Frontend - Next.js 15 (App Router) + React + TypeScript + Tailwind CSS
+    - Backend - Next.js API Routes
+    - Database - MongoDB Atlas
+    - Real-time: Socket.io
+    - Maps: Leaflet.js + React-Leaflet
+    - Auth: NextAuth.js (with Credentials + JWT)
+    - Payments: Razorpay Test Mode
+    - State Management: Zustand (lightweight)
+    - Deployment: Vercel (frontend + API) + MongoDB Atlas
 
 + Local run instructions - 
-    Test credentials + Razorpay test card 
+    - Test credentials + Razorpay test card 
 
 + Features list:
 
 + Live link:
 
 + Team members & roles:
-    1. Akshara
+    1. Akshara - Full Stack + Backend
     2. Anshita Rathore - Frontend
 
 + Current limitations : 
