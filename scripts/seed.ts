@@ -12,13 +12,13 @@ import DeliveryAgent from "../models/DeliveryAgent";
 async function seedDatabase() {
   try {
     await connectDB();
-    console.log("🌱 Connecting to MongoDB...");
+    console.log("Connecting to MongoDB...");
 
     // Clear existing users (optional - only for development)
     await User.deleteMany({});
     await DeliveryAgent.deleteMany({});
 
-    console.log("🗑️  Cleared existing users");
+    console.log("Cleared existing users");
 
     const salt = await bcrypt.genSalt(10);
 
@@ -54,7 +54,7 @@ async function seedDatabase() {
       role: "customer",
     });
 
-    console.log("✅ Seeding completed successfully!");
+    console.log("Seeding completed successfully!");
     console.log("\nTest Credentials:");
     console.log("────────────────────");
     console.log("Business Owner :", "owner@logitrack.com / password123");

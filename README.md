@@ -17,7 +17,12 @@
     - Deployment: Vercel (frontend + API) + MongoDB Atlas
 
 ## Local run instructions - 
-    - Test credentials + Razorpay test card 
+### Test Credentials
+- **Business Owner**: `owner@logitrack.com` / `password123`
+- **Delivery Agent**: `agent@logitrack.com` / `password123`
+- **Customer**: `customer@logitrack.com` / `password123`
+- **Razorpay Test Card**:  
+    `4111 1111 1111 1111` | Any future expiry | Any 3-digit CVV
 
 ## Features list:
 ### Completed
@@ -25,9 +30,9 @@
 - Basic homepage with clean UI
 - Project structure initialized (app, lib, models folders ready)
 - README.md with proper documentation
-### In Progress
 - Authentication system (NextAuth.js)
 - MongoDB connection
+### In Progress
 - Role-based user system (Business, Agent, Customer)
 ### Planned
 - Product CRUD for Business Owner
