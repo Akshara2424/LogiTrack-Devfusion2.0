@@ -1,6 +1,7 @@
 // lib/auth.ts
 import NextAuth, { DefaultSession } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { getServerSession } from "next-auth/next";
 import bcrypt from "bcryptjs";
 import connectDB from "./db";
 import User from "@/models/User";
@@ -86,5 +87,7 @@ export const authOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
+
+export const auth = () => getServerSession(authOptions);
 
 export default NextAuth(authOptions);
